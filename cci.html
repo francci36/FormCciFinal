@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire 1ère page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!--Entête-->
+    <header>
+        <div class="entete">
+                <img src="cciCher.png" alt="">
+                <img src="cciForma.png" alt="">
+        </div>
+    </header>
+    <!--Contenue du corps de la page-->
+    <article>
+        <div class="haut">
+            <h1>développeu.se.r web et web mobile</h1>
+            <h2>dossier de candidature</h2>
+            <h3>du 29 septembre 2022 au 30 Juin 2023 </h3>
+            <div class="">
+                <p>(remise à niveau possible du 15 au 28 septembre 2022</p>
+                <span>(date limite de depot du dossier le 12/07/2022 a 17h)</span>
+            </div>
+        </div>
+        <form class="conteneur" method='POST' action='reçoit des données'>
+            <div class="civilite">
+                <label for="civilite">Civilité</label>
+                <input type="radio" name="civilité" value="mme" /> <label>Mme</label>
+                <input type="radio" name="civilité" value="m" /> <label>M</label>
+                <label for="nom">Nom d'usage</label>
+                <input type='text' id='nom' name='nom' required>
+                <label for="prenom">Prénom</label>
+                <input type='text' id='prenom' name='prenom' required>
+                <label for="nom de naissace">Nom de naissance</label>
+                <input type='text' id='nom de naissance' name='nom de naissance' required>
+                <label for="date de naissance">Nom de naissance</label>
+                <input type='date' id='date de naissance' name='date de naissance' required pattern="[dd] [mm] [aaaa] " >
+                <label for="lieu de naissance">Lieu</label>
+                <input type='text' id='lieu' name='lieu' required>
+                <label for="nationalite">Nationalite</label>
+                <input type='text' id='nationalite' name='nationalite' required>
+                <label for="adresse">Adresse</label>
+                <input type='text' id='adresse' name='adresse' required>
+                <label for="ville">Ville</label>
+                <input type='text' id='ville' name='ville' required>
+                <label for="code postal">Code postal</label>
+                <input type='chiffre' id='code postal' name='code postal' required>
+                <label for="ville">Ville</label>
+                <input type='text' id='ville' name='ville' required>
+                <label for="telephone">Téléphone</label>
+                <input type='tél' id='phone' name='phone' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="06 00 00 00 00 00">
+                <label for="portable">Portable</label>
+                <input type='numero' id='portable' name='portable' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="01 00 00 00 00 00">
+                <label for="e-mail">E-mail</label>
+                <input type='email' id='e-mail' name='e-mail' required>
+            </div>
+            <div class="situation-familiale">
+                <label for="permis de conduire">Titulaire du permis B</label>
+                <input type="radio" name="titulaire du permis de conduire" value="oui" checked="checked" /> <label>oui</label>
+                <input type="radio" name="titulaire du permis" value="non" /> <label>non</label>
+                <input type="radio" name="titulaire du permis" value="en cours" checked="checked" /> <label>en cours</label>
+                <label for="situation familiale">Situation familiale</label>
+                <input type="radio" name="situation-familiale" value="celibataire" /> <label>celibataire</label>
+                <input type="radio" name="situation-familiale" value="vie maritale" /> <label>Vie maritale</label>
+                <input type="radio" name="situation-familiale" value="pacs" /> <label>Pacs</label>
+                <input type="radio" name="situation-familiale" value="marié.e" /> <label>Marié.e</label>
+                <input type="radio" name="situation-familiale" value="veuf.ve" /> <label>Veuf.ve</label>
+                <input type="radio" name="situation-familiale" value="divorcé.e" /> <label>Divorcé.e</label> <br>
+                <label for="nombre d'enfants">Nombre d'enfants</label>
+                <input type='text' id="nombre d'enfants" name="nombre d'enfants" required>
+                <label for="dont">dont</label>
+                <input type='text' id='dont' name='dont' required>
+            </div>
+            <div class="adress2">
+                <p>Si différente pendant le stage</p>
+                <div>
+                    <label for="adresse-postal">Adresse postale</label>
+                    <input type='text' id='adresse-postale' name='adresse postale' required>
+                    <label for="code postal">Code postale</label>
+                    <input type='text' id='code postale' name='code postale' required>
+                    <label for="ville">Ville</label>
+                    <input type='text' id='ville' name='ville' required>
+                    <label for="travailleur.se handicape.e">Êtes-vous reconnu.u Travailleur.se Handicapé.e</label>
+                    <input type="radio" name="travailleur.se handicape.e" value="oui" /> <label>oui (joindre justificatif)</label>
+                    <input type="radio" name="travailleur.se handicape.e" value="non" /> <label>non</label>
+                    <label for="n° de securite sociale">N° de Sécurité Sociale</label>
+                    <input type='numero' id='n° de securite sociale' name='n° de securite sociale' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="">
+                </div>
+            </div>
+            <div class="contact">
+                <p>Personne à contacter en cas d'urgence</p>
+                <label for="civilite">Civilité</label>
+                <input type="radio" name="civilité" value="mme" /> <label>Mme</label>
+                <input type="radio" name="civilité" value="m" /> <label>M</label>
+                <label for="nom">Nom</label>
+                <input type='text' id='nom' name='nom' required>
+                <label for="prenom">Prénom</label>
+                <input type='text' id='prenom' name='prenom' required>
+                <label for="portable">Portable</label>
+                <input type='numero' id='portable' name='portable' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="01 00 00 00 00 00">
+                <label for="e-mail">E-mail</label>
+                <input type='email' id='e-mail' name='e-mail' required>
+                <label for="lien de parente">Lien de parenté</label>
+                <input type='lien de parente' id='lien de parente' name='lien de parenté' required>
+            </div>
+        </form>
+    </article>
+    <!--Le pied de page-->
+    <footer>
+        <div class="image">
+             
+            <span><img src="logoAven.png" alt=""></span>
+            <span><img src="logoCVL.png" alt=""></span>
+            <span><img src="logoHCC.png" alt=""></span>
+        </div>
+        <div>
+            <p>Avenue d'Issoudun - CS 70237 - 18022 - Bourges Cedex <br>
+            T. 02 48 67 80 80 - F. 02 48 67 80 99 - www.cher.cci.fr <br>
+            SIRET 181 800 012</p>
+            <p>Campus de la CCI du Cher - 25rue Louis Mallet - CS 70237 - 18022 Bourges Cedex <br>
+            T. 02488675555 - F. 0248205750</p>
+        </div>
+
+
+    </footer>   
+    <!--Fin  de ma première page--> 
+    
+</body>
+</html>
