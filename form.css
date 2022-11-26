@@ -1,51 +1,87 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: block;
-    margin: 60px;
-    background-color: rgba(0, 128, 0, 0.103);
+    margin: 60px auto;
+    background-color: rgba(225, 238, 225, 0.153);
     width: 90%
-  }
-  .logo-header{
-    display: flex;
-    justify-content: space-between;
-  }
-  .tableau1 .haut h1, h2, h3, .petite-police{
+}
+h1{
+    text-transform: uppercase ;
+    padding: 10px;
+    
+}
+.logo-header img{
+    width: 120px;
+    height: auto;
+    padding: 10px;
+}
+.logo-header img:first-child{
+    float: left;
+}
+.logo-header img:last-child{
+    float: right;
+}
+.logo-header{
+    display: block;
+    height: 60px;
+}
+.tableau1 .haut h1, h2, h3, .petite-police{
     text-align: center;
     color: rgba(0, 0, 255, 0.774);
-  }
-  .tableau1 .haut h1{
-    background-color: rgba(0, 100, 0, 0.459);
-  
-  }
-  .tableau1{
-    background-color: rgba(100, 148, 237, 0.281);
-    border: solid rgba(203, 221, 85, 0.815);
-  }
-  fieldset{
-    border: solid rgba(0, 0, 255, 0.651);
+}
+.tableau1 .haut h1{
+    background-color: rgba(156, 190, 156, 0.836);
+    border-radius: 12px;
     
-  }
-  legend{
-    font-size: larger;
-    font-weight: bold;
-  }
-  .tableau2{
+}
+.tableau1{
     border: solid rgba(203, 221, 85, 0.815) ;
     background-color:rgba(100, 148, 237, 0.281);
-    border: solid ;
-  }
-  .tableau2 .table .thead h1{
+    padding: 0 20px;
+}
+fieldset{
+    border: solid rgba(69, 69, 128, 0.651);
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+legend{
+    font-size: larger;
+    font-weight: bold;
+}
+.tableau2{
+    border: solid rgba(203, 221, 85, 0.815) ;
+    background-color:rgba(100, 148, 237, 0.281);
+    padding: 0 20px;
+}
+.tableau2 .table .thead h1{
     text-align: center;
-  }
-  fieldset label{
+}
+fieldset label{
     margin: 3px;
     padding: 3px;
-  }
-  .pied{
+}
+.pied{
     background-color: rgba(95, 158, 160, 0.432);
     padding: 5px;
-  
-  }
-  input{
-    padding: 4px;
-  }
+    font-size: xx-small;
+
+}
+input, label{
+    padding: 5px;
+    margin-bottom: 4px;
+}
+input, textarea{
+    border: solid 1px rgba(107, 107, 146, 0.687);
+    border-radius: 6px;
+    background-color: rgba(243, 249, 249, 0.862);
+}
+.pied .image img{
+    max-width: 120px;
+    max-height: auto;
+    padding: 10px;
+}
+@media screen {
+    width: 600px;
+
+    
+}
