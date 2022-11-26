@@ -74,14 +74,27 @@ input, textarea{
     border: solid 1px rgba(107, 107, 146, 0.687);
     border-radius: 6px;
     background-color: rgba(243, 249, 249, 0.862);
+    margin: 5px;
+    height: auto;
 }
 .pied .image img{
     max-width: 120px;
     max-height: auto;
     padding: 10px;
 }
+.telechargement input{
+    color: rgb(75, 49, 99);
+    border: solid rgb(87, 34, 34);
+}
+button{
+    background-color: rgb(69, 136, 69);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: blue;
+}
+button:hover{
+    color: violet;
+}
 @media screen {
-    width: 600px;
-
-    
+    width: 600px;   
 }
